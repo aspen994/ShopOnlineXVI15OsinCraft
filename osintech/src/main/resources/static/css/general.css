@@ -1,0 +1,51 @@
+.video-info{
+    font-size: 35px;
+    color:red;
+}
+
+.thumbnail {
+    width: 50px;
+    border-width: 2px;
+    border-style: none;
+    border-radius:20px;
+    margin-left:10px
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin-bottom: 0px;
+    margin-left: 6px;
+}
+
+.main{
+    display:flex;
+    flex-direction: column;
+    position:fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+
+    margin-bottom: 0px;
+    margin-left: 6px;
+}
+
+.header{
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 10px;
+    left: 125px;
+    right: 0;
+    margin-bottom: 0px;
+    margin-left: 6px;
+}
+
+
+
