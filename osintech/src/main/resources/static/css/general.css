@@ -1,6 +1,11 @@
 body{
+    height: 3000px;
     margin: 0;
-    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 80px;
+    padding-top: 150px;
+    padding-right: 25px;
 }
 
 .top-section{
@@ -14,7 +19,6 @@ body{
 .middle-section{
     display:flex;
     flex-direction: row;
-    position:fixed;
     align-items: center;
     top:60px;
     left: 0;
@@ -33,10 +37,12 @@ body{
     display:flex;
     flex-direction: column;
     position:fixed;
+    background-color: white;
+    top:0;
     left: 0;
     right: 0;
     margin-bottom: 0px;
-    z-index:100px;
+    z-index:100;
 }
 
 .vector {
@@ -64,6 +70,7 @@ body{
     margin:0;
     font-family:Sriracha;
 }
+
 
 
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>XVI 15 clothing x Osin Craft</title>
     <link rel="stylesheet" type="text/css" th:href="@{/css/general.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/product.css}"/>
     <link rel="icon" type="image/x-icon" th:href="@{images/Logo_XVI_CUT.png}"/>
     <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 
@@ -13,30 +14,65 @@
 
 <header class="header">
 
-<div class="top-section">
-    <p class="free_delivery_text">Darmowa dostawa od 250 zł</p>
-</div>
+    <div class="top-section">
+        <p class="free_delivery_text">Darmowa dostawa od 250 zł</p>
+    </div>
 
     <div class="middle-section">
-            <img class="thumbnail" th:src="@{images/LOGO.png}" />
-            <img class="thumbnail"  th:src="@{images/logo_osin_craft.jpg}" />
+        <img class="thumbnail" th:src="@{images/LOGO.png}"/>
+        <img class="thumbnail" th:src="@{images/logo_osin_craft.jpg}"/>
 
 
-            <div class="video-info">
-                <p class="welcome_message">
-                    Witamy na stronie sklepu XVI 15 Clothing x Osin.Craft
-                </p>
-            </div>
+        <div class="video-info">
+            <p class="welcome_message">
+                Witamy na stronie sklepu XVI 15 Clothing x Osin.Craft
+            </p>
+        </div>
         <img class="vector" th:src="@{icons/search.svg}"/>
         <img class="vector" th:src="@{icons/profile-svgrepo-com.svg}"/>
         <img class="vector" th:src="@{icons/cart-svgrepo-com.svg}"/>
 
-        </div>
+    </div>
     </div>
 </header>
 
 <main>
     <section class="products-grid">
+
+        <div class="product-preview">
+            <div class="picture-row">
+                <img class="product" th:src="@{products/1.png}">
+                <div class="label-picture">Personalizacja</div>
+            </div>
+            <p>Koszulka DAD</p>
+            <p>110zł</p>
+        </div>
+
+        <div class="product-preview">
+            <div class="picture-row">
+                <img class="product" th:src="@{products/2.png}">
+                <div class="label-picture">Personalizacja</div>
+            </div>
+            <p>Koszulka TATA</p>
+            <p>110zł</p>
+        </div>
+
+        <div class="product-preview">
+            <div class="picture-row">
+                <img class="product" th:src="@{products/3.png}">
+                <div class="label-picture">Personalizacja</div>
+            </div>
+            <p>110zł</p>
+        </div>
+
+        <div class="product-preview">
+            <div class="picture-row">
+                <img class="product" th:src="@{products/4.png}">
+                <div class="label-picture">Personalizacja</div>
+            </div>
+            <p>110zł</p>
+        </div>
+
 
     </section>
 </main>
