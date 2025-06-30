@@ -22,7 +22,6 @@
         <img class="thumbnail" th:src="@{images/LOGO.png}"/>
         <img class="thumbnail" th:src="@{images/logo_osin_craft.jpg}"/>
 
-
         <div class="video-info">
             <p class="welcome_message">
                 Witamy na stronie sklepu XVI 15 Clothing x Osin.Craft
@@ -38,22 +37,23 @@
 
 <main>
     <section class="products-grid">
-
-        <div class="product-preview">
-            <div class="picture-row">
-                <img class="product" th:src="@{products/1.png}">
-                <div class="label-picture">Personalizacja</div>
+        <a th:href="@{/product1}"
+           class="btn btn-primary btn-sm mb-3">
+            <div class="product-preview">
+                <div class="picture-row">
+                    <img class="product" th:src="@{products/1.png}">
+                    <div class="label-picture">Personalizacja</div>
+                </div>
+                <p>Koszulka DAD</p>
+                <p>110zł</p>
             </div>
-            <p>Koszulka DAD</p>
-            <p>110zł</p>
-        </div>
-
+        </a>
         <div class="product-preview">
             <div class="picture-row">
                 <img class="product" th:src="@{products/2.png}">
                 <div class="label-picture">Personalizacja</div>
             </div>
-            <p>Koszulka TATA</p>
+            <p>Koszulka TATA- czarne napisy</p>
             <p>110zł</p>
         </div>
 
@@ -62,6 +62,7 @@
                 <img class="product" th:src="@{products/3.png}">
                 <div class="label-picture">Personalizacja</div>
             </div>
+            <p>Koszulka TATA- brązowy napis "1"</p>
             <p>110zł</p>
         </div>
 
@@ -70,7 +71,17 @@
                 <img class="product" th:src="@{products/4.png}">
                 <div class="label-picture">Personalizacja</div>
             </div>
+            <p>Koszulka TATA- brązowy napis "2"</p>
             <p>110zł</p>
+        </div>
+
+        <div class="product-preview">
+            <div class="picture-row">
+                <img class="product" th:src="@{products/shirt_hand_1.png}">
+                <div class="label-picture">Personalizacja</div>
+            </div>
+            <p>Koszulka Najlepszy tata- rączki </p>
+            <p>90zł</p>
         </div>
 
 

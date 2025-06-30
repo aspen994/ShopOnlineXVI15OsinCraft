@@ -9,40 +9,40 @@ body{
 }
 
 .top-section{
-    display:flex;
-    left:0;
-    right:0;
-    background-color:black;
-    justify-content:space-around;
+    display: flex;
+    left: 0;
+    right: 0;
+    background-color: black;
+    justify-content: space-around;
 }
 
 .middle-section{
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
-    top:60px;
+    top: 60px;
     left: 0;
     right: 0;
     margin-bottom: 0px;
-    margin-left:20px;
-    margin-right:20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .free_delivery_text{
-    color:white;
-    font-family:serif;
+    color: white;
+    font-family: serif;
 }
 
 .header{
-    display:flex;
+    display: flex;
     flex-direction: column;
-    position:fixed;
+    position: fixed;
     background-color: white;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     margin-bottom: 0px;
-    z-index:100;
+    z-index: 100;
 }
 
 .vector {
@@ -50,32 +50,21 @@ body{
     margin-right: 10px;
 }
 
-
 .thumbnail {
     width: 50px;
     border-width: 2px;
     border-style: none;
-    border-radius:20px;
-    margin-left:10px
+    border-radius: 20px;
+    margin-left: 10px;
 }
-
 
 .video-info{
     font-size: 35px;
-    flex-grow:1;
+    flex-grow: 1;
 }
 
 .welcome_message{
-    text-align:center;
-    margin:0;
-    font-family:Sriracha;
+    text-align: center;
+    margin: 0;
+    font-family: Sriracha;
 }
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>XVI 15 clothing x Osin Craft</title>
+    <link rel="icon" type="image/x-icon" th:href="@{/images/Logo_XVI_CUT.png}" />
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+</head>
+<body>
+
+<header class="header">
+    <div class="top-section">
+        <p>Darmowa dostawa od 250 zł</p>
+    </div>
+    <div class="middle-section">
+        <img th:src="@{/images/LOGO.png}" alt="XVI logo" />
+        <img th:src="@{images/logo_osin_craft.jpg}"/>
+        <p class="welcome_message">Witamy w sklepie XVI 15 Clothing x Osin.Craft</p>
+        <div class="icons">
+            <img th:src="@{/icons/search.svg}" alt="Szukaj" />
+            <img th:src="@{/icons/profile-svgrepo-com.svg}" alt="Profil" />
+            <img th:src="@{/icons/cart-svgrepo-com.svg}" alt="Koszyk" />
+        </div>
+    </div>
+
+    <!-- Nowa sekcja z kategoriami -->
+    <nav class="category-nav">
+        <ul class="category-list">
+            <li><a href="#" class="category-link">Perosonalizacja</a></li>
+            <li><a href="#" class="category-link">Dzien mamy</a></li>
+            <li><a href="#" class="category-link">Dzien taty</a></li>
+            <li><a href="#" class="category-link">Pozostałe</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="product-section">
+    <div class="product-grid">
+
+        <!-- Produkt 1 -->
+        <a th:href="@{/product1}"
+        class="btn btn-primary btn-sm mb-3">
+        <div class="product-card">
+            <div class="image-wrapper">
+                <img th:src="@{/products/1.png}" alt="Koszulka DAD" class="product-image">
+                <div class="label-picture">Personalizacja</div>
+            </div>
+            <h3>Koszulka DAD</h3>
+            <p class="price">110 zł</p>
+        </div>
+        </a>
+
+        <!-- Produkt 2 -->
+        <div class="product-card">
+            <div class="image-wrapper">
+                <img th:src="@{/products/2.png}" alt="Koszulka TATA czarne napisy" class="product-image">
+                <div class="label-picture">Personalizacja</div>
+            </div>
+            <h3>Koszulka TATA — czarne napisy</h3>
+            <p class="price">110 zł</p>
+        </div>
+
+        <!-- Produkt 3 -->
+        <div class="product-card">
+            <div class="image-wrapper">
+                <img th:src="@{/products/3.png}" alt="Koszulka TATA brązowy napis 1" class="product-image">
+                <div class="label-picture">Personalizacja</div>
+            </div>
+            <h3>Koszulka TATA — brązowy napis "1"</h3>
+            <p class="price">110 zł</p>
+        </div>
+
+        <!-- Produkt 4 -->
+        <div class="product-card">
+            <div class="image-wrapper">
+                <img th:src="@{/products/4.png}" alt="Koszulka TATA brązowy napis 2" class="product-image">
+                <div class="label-picture">Personalizacja</div>
+            </div>
+            <h3>Koszulka TATA — brązowy napis "2"</h3>
+            <p class="price">110 zł</p>
+        </div>
+
+        <!-- Produkt 5 -->
+        <div class="product-card">
+            <div class="image-wrapper">
+                <img th:src="@{/products/shirt_hand_1.png}" alt="Koszulka Najlepszy tata" class="product-image">
+                <div class="label-picture">Personalizacja</div>
+            </div>
+            <h3>Koszulka Najlepszy tata — rączki</h3>
+            <p class="price">90 zł</p>
+        </div>
+
+
+        <!-- Produkt 6 -->
+        <div class="product-card">
+            <div class="image-wrapper">
+                <img th:src="@{/products/Pierdolniety.png}" class="product-image">
+                <div class="label-picture">Personalizacja</div>
+            </div>
+            <h3>Pierdo#niety</h3>
+            <p class="price">69.99 zł</p>
+        </div>
+
+
+    </div>
+</main>
+
+</body>
+</html>

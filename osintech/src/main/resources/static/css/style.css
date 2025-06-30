@@ -1,0 +1,186 @@
+a {
+    text-decoration: none;
+}
+
+h3 {
+    color:black;
+}
+
+body {
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+    background-color: #fff;
+    color: #333;
+}
+
+.header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: white;
+    z-index: 100;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-section {
+    background-color: black;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.top-section p {
+    color: white;
+    margin: 0;
+    font-weight: bold;
+}
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.middle-section img {
+    height: 50px;
+}
+
+.welcome_message {
+    font-size: 24px;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.icons img {
+    height: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.product-section {
+    margin-top: 160px;
+    padding: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.product-card {
+    background-color: transparent; /* bez ramki i cienia */
+    box-shadow: none;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-right:20px;
+    margin-left:20px;
+    margin-bottom:20px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.image-wrapper {
+    position: relative;
+    width: 400px;
+    overflow: visible; /* pozwala labelowi wystawać poza obraz */
+    margin-bottom: 12px;
+}
+
+.product-image {
+    width:100%;
+    border-width: 2px;
+    border-style: none;
+}
+
+.label-picture {
+    position: absolute;
+    bottom: 40px; /* wychodzi lekko poza dolną krawędź zdjęcia */
+    right: -50px;
+    padding: 4px 10px;
+    font-size: 16px;
+    background-color: #003049;
+    font-weight: 500;
+    color: #fdf0d5;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* delikatny cień */
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    color: #003049;
+}
+
+.price {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Sekcja kategorii pod headerem */
+.category-nav {
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 110px; /* wysokość headera */
+    z-index: 90;
+}
+
+.category-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+
+.category-list li {
+/* opcjonalnie */
+}
+
+.category-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.category-link:hover,
+.category-link:focus {
+    background-color: #003049;
+    color: #fdf0d5;
+    outline: none;
+}
+
+.category-link.active {
+    background-color: #003049;
+    color: #fdf0d5;
+}

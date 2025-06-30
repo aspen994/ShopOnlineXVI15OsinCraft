@@ -13,7 +13,11 @@ public class ShopController {
     @GetMapping("")
     public String returnSzymonName()
     {
-        return "shop-page";
+        return "shop-page-1";
     }
 
+    @GetMapping("/product1")
+    public String returnProduct(){
+        return "product-page-1";
+    }
 }
